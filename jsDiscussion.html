@@ -20,21 +20,21 @@
 		document.querySelector('h1').innerHTML = "Harrison J. McCabe";
 		document.querySelector('#URL').innerHTML = window.location.href
 
-		let listItems = document.getElementsByTagName('li');
+		let listItems = document.querySelectorAll('li');
 		console.log(listItems);
 
 		document.querySelector('#items').innerHTML = listItems.length;
-		document.querySelector('#time').innerHTML = Date()
+		document.querySelector('#time').innerHTML = new Date()
 
 		document.body.style.backgroundColor = "#808AD9";
 		document.body.style.marginLeft = "50px"
 
-		function copyFunction(){
-			document.write("<#cheer> Go Blue </#cheer>");
-			console.log('this')
-		}
 
 	}
+	function copyFunction(){
+			document.querySelector('#cheer').innerHTML += "<br>Go Blue\n";
+			console.log('Go Blue')
+		}
 </script>
 <style>
 p{
